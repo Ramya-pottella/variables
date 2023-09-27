@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+    <head>
+         <title>vat,let and const</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="main.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>VAR,LET AND CONST VARIABLES IN JS</h1>
+            <div class="card">
+                <div class="container">
+                    <h3>USING VAR VARIABLE:</h3>
+                    <label style="font-size:20px;"> Assigned Value:</label> <label  style="color:firebrick; font-size:20px;" id="assign1"></label><br>
+                     <label style="font-size:20px;">Reassigned Value:</label><label style="color: blueviolet; font-size:20px;" id="varLabel"></label>
+                    <div>
+                    <button onclick="changeVar()" class="btn btn-success mt-5">Click Here</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>USING LET VARIABLE:</h3>
+                        <label style="font-size:20px;">Assigned Value:</label>
+                        <label style="color:firebrick; font-size:20px;" id="assign2"></label><br/>
+                        <label style="font-size:20px;">Reassigned Value:</label><label style="color: blueviolet; font-size:20px;" id="letLabel"></label>
+                    <div>
+                    <button onclick="changeLet()" class="btn btn-warning mt-5">Click Here</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>USING CONST VARIABLE:</h3>
+                    <label style="font-size:20px;">Assigned Value:</label><label   style="color:firebrick; font-size:20px;" id="assign3"></label><br>
+                    <label style="font-size:20px;" >Reassigned Value:</label><label  style="color: blueviolet; font-size:20px;" id="constLabel"></label>
+                    <div>
+                     <button  onclick="changeConst()" class="btn btn-info mt-5">Click Here</button>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+    <style>
+         .container{
+            width:35%;
+            border-radius:25px 75px;
+            border:5px solid sagegreen;
+            box-shadow:20px 20px 10px #aaaaaa;
+            margin:10px;
+            padding:10px;
+            height:250px;
+            background-color:white;
+        }
+        .card{
+            width:80%;
+            display: flex;
+            justify-content:space-between;
+            flex-direction: row;
+            margin:30px;
+        }
+        h1{
+            color:blue;
+            text-decoration: underline;
+            font-family:serif;
+        }
+        h3{
+            color:darkturquoise;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        body{
+            background-color:antiquewhite;
+        }
+    </style>
+</html>
